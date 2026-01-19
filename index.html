@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Live News App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Tailwind CDN (utilities only) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+<div id="progress-bar"></div>
+
+
+<header>
+  <h1>Live News</h1>
+
+
+  <nav>
+    <button onclick="latestNews()" class="btn">Latest</button>
+    <button onclick="techNews()" class="btn">Tech</button>
+    <button onclick="cyberNews()" class="btn">Cyber</button>
+    <button onclick="nationalNews()" class="btn">National</button>
+    <button onclick="internationalNews()" class="btn">International</button>
+    <button onclick="sportsNews()" class="btn">Sports</button>
+    <button onclick="showSaved()" class="btn">Saved</button>
+
+
+    <input
+      id="searchInput"
+      placeholder="Search news..."
+      onkeydown="if(event.key==='Enter') searchNews()"
+    >
+
+
+    <button onclick="searchNews()" class="btn">Search</button>
+    <button id="themeBtn" onclick="toggleDarkMode()" class="btn">Dark</button>
+    <button onclick="toggleReadingMode()" class="btn">Quick</button>
+  </nav>
+</header>
+
+
+<main id="news-container"></main>
+
+
+<script src="app.js"></script>
+</body>
+</html>
+
+
+
