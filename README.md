@@ -21,10 +21,9 @@ It fetches real-time news across multiple categories and focuses on clean UI, us
 - LocalStorage
 
 ## Project Structure
-index.html
-style.css
-app.js
-
+- index.html
+- style.css
+- app.js
 
 ## Setup
 1. Clone the repo  
